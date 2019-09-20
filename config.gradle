@@ -31,6 +31,8 @@ ext {
 
             support_annotations : "com.android.support:support-annotations:28.0.0",
             support_appcompat   : "com.android.support:appcompat-v7:28.0.0",
+
+            Utils               : "com.github.FengChenSunshine:Utils:1.0.0",
     ]
 
 }

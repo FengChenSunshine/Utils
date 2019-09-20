@@ -30,6 +30,7 @@ dependencies {
 
     implementation library.support_appcompat
 
-    implementation project(":library_utils")
+//    implementation project(":library_utils")
+    implementation library.Utils
 
 }
