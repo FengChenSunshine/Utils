@@ -13,10 +13,13 @@ Add it in your root build.gradle at the end of repositories:
 
 ### Step 2. Add the dependency
     dependencies {
-	    implementation 'com.github.FengChenSunshine:Utils:1.0.1'
+	    implementation 'com.github.FengChenSunshine:Utils:1.0.2'
 	}
 
 ## 历史版本
+### 1.0.2
+增加CrashHandler全局异常捕获类.
+
 ### 1.0.1
 新增工具类：
 
