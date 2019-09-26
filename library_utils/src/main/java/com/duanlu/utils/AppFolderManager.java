@@ -25,6 +25,7 @@ public class AppFolderManager {
     public static final String FOLDER_NAME_BACKUPS = "Backups";
     public static final String FOLDER_NAME_PICTURE = "Picture";
     public static final String FOLDER_NAME_AVATAR = "Avatar";
+    public static final String FOLDER_NAME_UPDATE = "Update";
 
     private static String sRootFolderName;
     private static String sAuthority;
@@ -69,6 +70,10 @@ public class AppFolderManager {
 
     public static File getAvatarFolder() {
         return getFolderFile(FOLDER_NAME_AVATAR);
+    }
+
+    public static File getUpdateFolder() {
+        return getFolderFile(FOLDER_NAME_UPDATE);
     }
 
     private static File getFolderFile(@NonNull String folderName) {
