@@ -13,15 +13,21 @@ Add it in your root build.gradle at the end of repositories:
 
 ### Step 2. Add the dependency
     dependencies {
-	    implementation 'com.github.FengChenSunshine:Utils:1.0.2'
+	    implementation 'com.github.FengChenSunshine:Utils:1.0.3'
 	}
 
 ## 历史版本
 
 ### 1.0.3 待发布
-1.AppFolderManager中增加版本更新文件夹.
+1.依赖库升级到AndroidX；
 
-2.IntentUtils增加支持分享多张图片、多个Uri意图.
+2.AppFolderManager中增加版本更新文件夹；
+
+3.IntentUtils增加支持分享多张图片、多个Uri意图；
+
+4.新增ResourceUtils工具类；
+
+5.其它。
 
 ### 1.0.2
 增加CrashHandler全局异常捕获类.
