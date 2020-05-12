@@ -24,16 +24,20 @@ ext {
     ]
 
     library = [
-            junit               : "junit:junit:4.12",
-            test_runner         : 'androidx.test.ext:junit:1.1.1',
-            test_espresso_core  : 'androidx.test.espresso:espresso-core:3.1.0',
-            android_junit_runner: "androidx.test.runner.AndroidJUnitRunner",
+            junit                  : "junit:junit:4.12",
+            test_runner            : 'androidx.test.ext:junit:1.1.1',
+            test_espresso_core     : 'androidx.test.espresso:espresso-core:3.1.0',
+            android_junit_runner   : "androidx.test.runner.AndroidJUnitRunner",
 
-            core                : 'androidx.core:core:1.2.0',
-            support_annotations : 'androidx.annotation:annotation:1.1.0',
-            support_appcompat   : 'androidx.appcompat:appcompat:1.1.0',
+            core                   : 'androidx.core:core:1.2.0',
+            lifecycle_livedata_core: 'androidx.lifecycle:lifecycle-livedata-core:2.2.0',
+            support_annotations    : 'androidx.annotation:annotation:1.1.0',
+            support_appcompat      : 'androidx.appcompat:appcompat:1.1.0',
+            coordinatorlayout      : 'androidx.coordinatorlayout:coordinatorlayout:1.1.0',
+            drawerlayout           : 'androidx.drawerlayout:drawerlayout:1.0.0',
+            fragment               : 'androidx.fragment:fragment:1.2.4',
 
-            Utils               : "com.github.FengChenSunshine:Utils:1.0.3",
+            Utils                  : "com.github.FengChenSunshine:Utils:1.0.3",
     ]
 
 }

@@ -36,4 +36,13 @@ dependencies {
 
     //FileUtils使用FileProvider
     implementation library.core
+    //AppForegroundBackgroundManager使用Observer.
+    implementation library.lifecycle_livedata_core
+    //StatusBarUtils使用.
+    implementation library.coordinatorlayout
+    //StatusBarUtils使用.
+    implementation library.drawerlayout
+    //IntentUtils使用.
+    implementation library.fragment
+
 }
