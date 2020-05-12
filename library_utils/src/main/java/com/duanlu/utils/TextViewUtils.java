@@ -36,19 +36,19 @@ public class TextViewUtils {
         return String.format(Locale.getDefault(), format, args);
     }
 
-    public static String getText(TextView textView) {
+    public static String getString(TextView textView) {
         return null == textView ? "" : textView.getText().toString();
     }
 
-    public static String getTextTrim(TextView textView) {
-        return getText(textView).trim();
+    public static String getStringTrim(TextView textView) {
+        return getString(textView).trim();
     }
 
     /**
      * 复制内容到系统剪切板.
      */
     public static boolean copy2Clipboard(Context context, TextView textView) {
-        return copy2Clipboard(context, getTextTrim(textView));
+        return copy2Clipboard(context, getStringTrim(textView));
     }
 
     /**

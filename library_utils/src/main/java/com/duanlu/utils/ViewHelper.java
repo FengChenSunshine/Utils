@@ -3,6 +3,7 @@ package com.duanlu.utils;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.IdRes;
+import android.support.annotation.Nullable;
 import android.view.TouchDelegate;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,6 +52,11 @@ public class ViewHelper {
         }
     }
 
+    public static void setPadding(View view, int padding) {
+        if (null == view) return;
+        view.setPadding(padding, padding, padding, padding);
+    }
+
     public static void setPaddingLeft(View view, int padding) {
         if (null == view || padding == view.getPaddingLeft()) return;
         view.setPadding(padding, view.getPaddingTop(), view.getPaddingRight(), view.getPaddingBottom());
@@ -71,12 +77,12 @@ public class ViewHelper {
         view.setPadding(view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(), padding);
     }
 
-    public static void setPaddingLeftRight(View view, int padding) {
+    public static void setPaddingHorizontal(View view, int padding) {
         if (null == view || padding == view.getPaddingRight()) return;
         view.setPadding(padding, view.getPaddingTop(), padding, view.getPaddingBottom());
     }
 
-    public static void setPaddingTopBottom(View view, int padding) {
+    public static void setPaddingVertical(View view, int padding) {
         if (null == view || padding == view.getPaddingBottom()) return;
         view.setPadding(view.getPaddingLeft(), padding, view.getPaddingRight(), padding);
     }
@@ -147,6 +153,7 @@ public class ViewHelper {
      * @param view 需要获取的View.
      * @return ViewGroup.MarginLayoutParams.
      */
+    @Nullable
     public static ViewGroup.MarginLayoutParams getMarginLayoutParams(View view) {
         if (null == view) return null;
         ViewGroup.LayoutParams lp = view.getLayoutParams();

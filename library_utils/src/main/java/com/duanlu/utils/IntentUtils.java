@@ -20,6 +20,7 @@ import android.webkit.MimeTypeMap;
 import java.io.File;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+import java.util.ArrayList;
 
 /********************************
  * @name IntentUtils
@@ -222,6 +223,20 @@ public final class IntentUtils {
     }
 
     /**
+     * 获取调用系统分享功能分享多张图片的意图.
+     *
+     * @param uris 需要分享的图片的uri集合.
+     * @return 调用系统分享功能分享图片意图.
+     */
+    public static Intent getSystemShareMultiplePictureIntent(@NonNull ArrayList<Uri> uris) {
+        Intent intent = new Intent(Intent.ACTION_SEND_MULTIPLE);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris);
+        intent.setType("image/*");
+        return intent;
+    }
+
+    /**
      * 获取调用系统分享功能分享Uri意图.
      *
      * @param uri 需要分享的uri.
@@ -231,6 +246,20 @@ public final class IntentUtils {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra(Intent.EXTRA_STREAM, uri);
+        intent.setType("*/*");
+        return intent;
+    }
+
+    /**
+     * 获取调用系统分享功能分享多个Uri意图.
+     *
+     * @param uris 需要分享的uri集合.
+     * @return 调用系统分享功能分意图.
+     */
+    public static Intent getSystemShareUriIntent(@NonNull ArrayList<Uri> uris) {
+        Intent intent = new Intent(Intent.ACTION_SEND_MULTIPLE);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris);
         intent.setType("*/*");
         return intent;
     }

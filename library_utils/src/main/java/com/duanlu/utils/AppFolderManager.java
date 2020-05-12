@@ -21,11 +21,12 @@ public class AppFolderManager {
     private static final String TAG = AppFolderManager.class.getSimpleName();
 
     public static final String FOLDER_NAME_LOG = "Log";
-    public static final String FOLDER_NAME_CACHE = "Cache";
-    public static final String FOLDER_NAME_BACKUPS = "Backups";
-    public static final String FOLDER_NAME_PICTURE = "Picture";
-    public static final String FOLDER_NAME_AVATAR = "Avatar";
-    public static final String FOLDER_NAME_UPDATE = "Update";
+    public static final String FOLDER_NAME_CACHE = "Cache";//缓存.
+    public static final String FOLDER_NAME_BACKUPS = "Backups";//备份.
+    public static final String FOLDER_NAME_PICTURE = "Picture";//图片.
+    public static final String FOLDER_NAME_VIDEO = "Video";//视频.
+    public static final String FOLDER_NAME_AVATAR = "Avatar";//头像.
+    public static final String FOLDER_NAME_UPDATE = "Update";//版本更新.
 
     private static String sRootFolderName;
     private static String sAuthority;
@@ -68,6 +69,10 @@ public class AppFolderManager {
         return getFolderFile(FOLDER_NAME_PICTURE);
     }
 
+    public static File getVideoFolder() {
+        return getFolderFile(FOLDER_NAME_VIDEO);
+    }
+
     public static File getAvatarFolder() {
         return getFolderFile(FOLDER_NAME_AVATAR);
     }
@@ -82,7 +87,7 @@ public class AppFolderManager {
         return file;
     }
 
-    public static String getAuthoritie() {
+    public static String getAuthority() {
         return sAuthority;
     }
 

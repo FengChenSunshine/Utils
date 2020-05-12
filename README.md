@@ -17,6 +17,12 @@ Add it in your root build.gradle at the end of repositories:
 	}
 
 ## 历史版本
+
+### 1.0.3 待发布
+1.AppFolderManager中增加版本更新文件夹.
+
+2.IntentUtils增加支持分享多张图片、多个Uri意图.
+
 ### 1.0.2
 增加CrashHandler全局异常捕获类.
 
