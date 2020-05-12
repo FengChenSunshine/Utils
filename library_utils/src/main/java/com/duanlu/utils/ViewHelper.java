@@ -2,8 +2,8 @@ package com.duanlu.utils;
 
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.IdRes;
-import android.support.annotation.Nullable;
+import androidx.annotation.IdRes;
+import androidx.annotation.Nullable;
 import android.view.TouchDelegate;
 import android.view.View;
 import android.view.ViewGroup;

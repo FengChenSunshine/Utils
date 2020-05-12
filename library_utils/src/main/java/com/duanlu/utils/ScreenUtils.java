@@ -3,7 +3,7 @@ package com.duanlu.utils;
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /********************************
  * @name ScreenUtils

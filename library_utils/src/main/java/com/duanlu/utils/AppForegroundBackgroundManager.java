@@ -2,8 +2,8 @@ package com.duanlu.utils;
 
 import android.app.Activity;
 import android.app.Application;
-import android.arch.lifecycle.Observer;
-import android.support.annotation.NonNull;
+import androidx.lifecycle.Observer;
+import androidx.annotation.NonNull;
 
 import com.duanlu.utils.callbacks.SimpleActivityLifecycleCallbacks;
 

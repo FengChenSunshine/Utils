@@ -1,7 +1,7 @@
 package com.duanlu.utils;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.StringDef;
+import androidx.annotation.NonNull;
+import androidx.annotation.StringDef;
 import android.text.TextUtils;
 
 import java.lang.annotation.Retention;

@@ -35,5 +35,5 @@ dependencies {
     implementation library.support_annotations
 
     //FileUtils使用FileProvider
-    implementation library.support_appcompat
+    implementation library.core
 }
